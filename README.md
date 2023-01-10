@@ -1,6 +1,6 @@
 # 4Forties
-A health cum fitness application for elder citizens.
-Will Provide the APK soon!
+A health cum fitness application for citizens.
+
 
 
 
