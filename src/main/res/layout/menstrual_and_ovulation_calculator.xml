@@ -105,7 +105,7 @@
                 android:textColorHint="@color/black"
                 android:textSize="@dimen/textsize_14" />
 
-            <com.crazytrends.healthmanager.shashikant.calendar.SNPCalendarView
+            <com.ianmolcode.forforties.shashikant.calendar.SNPCalendarView
                 android:id="@+id/mFCalendarView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

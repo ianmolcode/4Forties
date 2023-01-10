@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.crazytrends.healthmanager.GifImageView
+                    <com.ianmolcode.forforties.GifImageView
                         android:id="@+id/GifImageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

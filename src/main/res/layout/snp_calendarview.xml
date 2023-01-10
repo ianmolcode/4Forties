@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.crazytrends.healthmanager.shashikant.calendar.ExpandableScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView1" android:background="@color/background_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<com.ianmolcode.forforties.shashikant.calendar.ExpandableScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView1" android:background="@color/background_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
         <LinearLayout android:orientation="vertical" android:id="@+id/linearlayout_header" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
             <RelativeLayout android:id="@+id/linearlayout_header_month" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
@@ -18,7 +18,7 @@
                 <TextView android:textSize="@dimen/text_14" android:textColor="#ffffff" android:textColorHint="#ffffff" android:gravity="center_horizontal" android:id="@+id/textview_saturday" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/saturday" android:lines="1" android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-        <com.crazytrends.healthmanager.shashikant.calendar.ExpandableHeightGridView
+        <com.ianmolcode.forforties.shashikant.calendar.ExpandableHeightGridView
             android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/gridview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:numColumns="7" android:layout_below="@+id/linearlayout_header"/>
     </RelativeLayout>
-</com.crazytrends.healthmanager.shashikant.calendar.ExpandableScrollView>
+</com.ianmolcode.forforties.shashikant.calendar.ExpandableScrollView>

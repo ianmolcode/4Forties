@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.crazytrends.healthmanager"
+    package="com.ianmolcode.forforties"
     android:installLocation="internalOnly">
 
 
@@ -30,7 +30,7 @@
 
     <!--    work out-->
     <permission
-        android:name="com.crazytrends.healthmanager.permission.C2D_MESSAGE"
+        android:name="com.ianmolcode.forforties.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
     <uses-permission android:name="com.crazytrends.healthmanager.permission.C2D_MESSAGE" />
 
@@ -43,7 +43,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="com.crazytrends.healthmanager.general.MyApplication"
+        android:name="com.ianmolcode.forforties.general.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/logo1"
         android:killAfterRestore="true"
@@ -59,7 +59,7 @@
             android:value="@string/admob_app_id" />
 
         <activity
-            android:name="com.crazytrends.healthmanager.general.Splash"
+            android:name="com.ianmolcode.forforties.general.Splash"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,33 +69,33 @@
 
 
         <activity
-            android:name="com.crazytrends.healthmanager.StatsActivity"
+            android:name="com.ianmolcode.forforties.StatsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MainTheme"></activity>
         <activity
-            android:name="com.crazytrends.healthmanager.InitUserInfoActivity"
+            android:name="com.ianmolcode.forforties.InitUserInfoActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.crazytrends.healthmanager.Water_MainActivity"
+            android:name="com.ianmolcode.forforties.Water_MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MainTheme"></activity>
 
-        <receiver android:name="com.crazytrends.healthmanager.recievers.NotifierReceiver" />
+        <receiver android:name="com.ianmolcode.forforties.recievers.NotifierReceiver" />
 
-        <receiver android:name="com.crazytrends.healthmanager.recievers.BootReceiver">
+        <receiver android:name="com.ianmolcode.forforties.recievers.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="com.crazytrends.healthmanager.MainActivity"
+            android:name="com.ianmolcode.forforties.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme1" />
 
 
         <activity
-            android:name="com.crazytrends.healthmanager.general.Home_page"
+            android:name="com.ianmolcode.forforties.general.Home_page"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -105,7 +105,7 @@
         </activity>
 
         <activity
-            android:name="com.crazytrends.healthmanager.bmi.BMI_Calculator"
+            android:name="com.ianmolcode.forforties.bmi.BMI_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -114,7 +114,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.bmi.BMI_Chart"
+            android:name="com.ianmolcode.forforties.bmi.BMI_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -123,7 +123,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.bmi.BMI_Result"
+            android:name="com.ianmolcode.forforties.bmi.BMI_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -132,7 +132,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_fat.Bodyfat_Calculator"
+            android:name="com.ianmolcode.forforties.body_fat.Bodyfat_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -141,7 +141,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_fat.Bodyfat_Result"
+            android:name="com.ianmolcode.forforties.body_fat.Bodyfat_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -150,7 +150,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_fat.Body_Fat_Chart"
+            android:name="com.ianmolcode.forforties.body_fat.Body_Fat_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -159,7 +159,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_burn.Calories_burn_Calculator"
+            android:name="com.ianmolcode.forforties.calories_burn.Calories_burn_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -168,7 +168,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_burn.Calories_Burn_Result"
+            android:name="com.ianmolcode.forforties.calories_burn.Calories_Burn_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -177,7 +177,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_burn.Calories_Burn_Chart"
+            android:name="com.ianmolcode.forforties.calories_burn.Calories_Burn_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -186,7 +186,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.child_growth.Child_Growth_Calculator"
+            android:name="com.ianmolcode.forforties.child_growth.Child_Growth_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -195,7 +195,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.child_growth.Child_growth_result"
+            android:name="com.ianmolcode.forforties.child_growth.Child_growth_result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -204,7 +204,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_donation.Blood_Donation_Calculator"
+            android:name="com.ianmolcode.forforties.blood_donation.Blood_Donation_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -213,7 +213,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_donation.Blood_Donation_Result"
+            android:name="com.ianmolcode.forforties.blood_donation.Blood_Donation_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -222,7 +222,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_intake.Daily_Calories_Intake_Calculator"
+            android:name="com.ianmolcode.forforties.calories_intake.Daily_Calories_Intake_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -231,7 +231,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_intake.Daily_Calories_Intake_Result"
+            android:name="com.ianmolcode.forforties.calories_intake.Daily_Calories_Intake_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -240,7 +240,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.calories_intake.Daily_Calories_Intake_Chart"
+            android:name="com.ianmolcode.forforties.calories_intake.Daily_Calories_Intake_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -249,7 +249,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.children_height_growth.Children_Height_Growth_Prediction_Calculator"
+            android:name="com.ianmolcode.forforties.children_height_growth.Children_Height_Growth_Prediction_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -258,7 +258,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.children_height_growth.Children_Predicted_Height_Result"
+            android:name="com.ianmolcode.forforties.children_height_growth.Children_Predicted_Height_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -267,7 +267,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.pregnancy_due_date.Pregnancy_Due_Date_Calculator"
+            android:name="com.ianmolcode.forforties.pregnancy_due_date.Pregnancy_Due_Date_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -276,7 +276,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.ideal_body_weight.Ideal_Body_Weight_Calculator"
+            android:name="com.ianmolcode.forforties.ideal_body_weight.Ideal_Body_Weight_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -285,7 +285,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.ideal_body_weight.Ideal_Body_Weight_Result"
+            android:name="com.ianmolcode.forforties.ideal_body_weight.Ideal_Body_Weight_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -294,7 +294,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.heart_rate.Heart_Rate_Calculator"
+            android:name="com.ianmolcode.forforties.heart_rate.Heart_Rate_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -303,7 +303,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.heart_rate.Heart_Rate_Result"
+            android:name="com.ianmolcode.forforties.heart_rate.Heart_Rate_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -312,7 +312,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.heart_rate.Heart_Rate_Chart"
+            android:name="com.ianmolcode.forforties.heart_rate.Heart_Rate_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -321,7 +321,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_pressure.BloodPressure_Calculator"
+            android:name="com.ianmolcode.forforties.blood_pressure.BloodPressure_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -330,7 +330,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_pressure.Bloodpressure_Chart"
+            android:name="com.ianmolcode.forforties.blood_pressure.Bloodpressure_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -339,7 +339,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_pressure.BloodPressure_Result"
+            android:name="com.ianmolcode.forforties.blood_pressure.BloodPressure_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -348,7 +348,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.alcohol.Alcohol_Chart"
+            android:name="com.ianmolcode.forforties.alcohol.Alcohol_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -357,7 +357,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.alcohol.Alcohol_Calculator"
+            android:name="com.ianmolcode.forforties.alcohol.Alcohol_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -366,7 +366,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.alcohol.Alcohol_Result"
+            android:name="com.ianmolcode.forforties.alcohol.Alcohol_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -375,7 +375,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.trademill.Trademill_Calculator"
+            android:name="com.ianmolcode.forforties.trademill.Trademill_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -384,7 +384,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.trademill.Trademill_Result"
+            android:name="com.ianmolcode.forforties.trademill.Trademill_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -393,7 +393,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.daily_water.Daily_WaterIntake_Calculator"
+            android:name="com.ianmolcode.forforties.daily_water.Daily_WaterIntake_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -402,7 +402,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.daily_water.Daily_WaterIntake_Result"
+            android:name="com.ianmolcode.forforties.daily_water.Daily_WaterIntake_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -411,7 +411,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.smoking_cost.Smokincost_Calculator"
+            android:name="com.ianmolcode.forforties.smoking_cost.Smokincost_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -420,7 +420,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.smoking_cost.SmokingCost_Result"
+            android:name="com.ianmolcode.forforties.smoking_cost.SmokingCost_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -429,7 +429,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.sugar.Sugar_calculator"
+            android:name="com.ianmolcode.forforties.sugar.Sugar_calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -438,7 +438,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.sugar.Sugar_Chart"
+            android:name="com.ianmolcode.forforties.sugar.Sugar_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -447,7 +447,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.sugar.Sugar_Result"
+            android:name="com.ianmolcode.forforties.sugar.Sugar_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -456,7 +456,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.menstrual_and_ovulation.Menstrual_Ovulation_Calculator"
+            android:name="com.ianmolcode.forforties.menstrual_and_ovulation.Menstrual_Ovulation_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -465,7 +465,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.smoking_risk.Smoking_Risk_Calculator"
+            android:name="com.ianmolcode.forforties.smoking_risk.Smoking_Risk_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -474,7 +474,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.menstrual_and_ovulation.Menstrual_and_ovulation_Result"
+            android:name="com.ianmolcode.forforties.menstrual_and_ovulation.Menstrual_and_ovulation_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -483,7 +483,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.smoking_risk.Smoking_Risk_Result"
+            android:name="com.ianmolcode.forforties.smoking_risk.Smoking_Risk_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -492,7 +492,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.BMR.bmr_calculator"
+            android:name="com.ianmolcode.forforties.BMR.bmr_calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -501,7 +501,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.BMR.BMR_Result"
+            android:name="com.ianmolcode.forforties.BMR.BMR_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -510,7 +510,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_volume.Blood_Volume_Calculator"
+            android:name="com.ianmolcode.forforties.blood_volume.Blood_Volume_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -519,7 +519,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.blood_volume.BloodVolume_Result"
+            android:name="com.ianmolcode.forforties.blood_volume.BloodVolume_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -528,7 +528,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_adiposity_index.Body_Adiposity_Index_Calculator"
+            android:name="com.ianmolcode.forforties.body_adiposity_index.Body_Adiposity_Index_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -537,7 +537,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_adiposity_index.Body_Adiposity_Index_Result"
+            android:name="com.ianmolcode.forforties.body_adiposity_index.Body_Adiposity_Index_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -546,7 +546,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_adiposity_index.Body_Adiposity_Index_Chart"
+            android:name="com.ianmolcode.forforties.body_adiposity_index.Body_Adiposity_Index_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -555,7 +555,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_frame_size.Body_Frame_Size_Calculator"
+            android:name="com.ianmolcode.forforties.body_frame_size.Body_Frame_Size_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -564,7 +564,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.body_frame_size.BodyFrame_Result"
+            android:name="com.ianmolcode.forforties.body_frame_size.BodyFrame_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -573,7 +573,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.Body_Surface_Area_Calculator.C1376Body_Surface_Area_Calculator"
+            android:name="com.ianmolcode.forforties.Body_Surface_Area_Calculator.C1376Body_Surface_Area_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -582,7 +582,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.Body_Surface_Area_Calculator.BodySurfaceArea_Result"
+            android:name="com.ianmolcode.forforties.Body_Surface_Area_Calculator.BodySurfaceArea_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -591,7 +591,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.chest_hip_ratio.Chest_Hip_Ratio_Calculator"
+            android:name="com.ianmolcode.forforties.chest_hip_ratio.Chest_Hip_Ratio_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -600,7 +600,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.chest_hip_ratio.Chest_Hip_Ratio_Result"
+            android:name="com.ianmolcode.forforties.chest_hip_ratio.Chest_Hip_Ratio_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -609,7 +609,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.cholestrol.Cholestrol_Calculator"
+            android:name="com.ianmolcode.forforties.cholestrol.Cholestrol_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -618,7 +618,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.cholestrol.Cholestrol_Result"
+            android:name="com.ianmolcode.forforties.cholestrol.Cholestrol_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -627,7 +627,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.lean_body_mass.Lean_Body_Mass_Calculator"
+            android:name="com.ianmolcode.forforties.lean_body_mass.Lean_Body_Mass_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -636,7 +636,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.lean_body_mass.Lean_Body_Mass_Result"
+            android:name="com.ianmolcode.forforties.lean_body_mass.Lean_Body_Mass_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -645,7 +645,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.waist_height_ratio.Waist_Height_Ratio_Calculator"
+            android:name="com.ianmolcode.forforties.waist_height_ratio.Waist_Height_Ratio_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -654,7 +654,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.waist_height_ratio.Waist_Height_Ratio_Result"
+            android:name="com.ianmolcode.forforties.waist_height_ratio.Waist_Height_Ratio_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -663,7 +663,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.waist_hip_ratio.Waist_Hip_Ratio_Calculator"
+            android:name="com.ianmolcode.forforties.waist_hip_ratio.Waist_Hip_Ratio_Calculator"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -672,7 +672,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.waist_hip_ratio.Waist_Hip_Ratio_Result"
+            android:name="com.ianmolcode.forforties.waist_hip_ratio.Waist_Hip_Ratio_Result"
             android:launchMode="singleTop"
             android:theme="@style/LLDialog">
             <intent-filter>
@@ -681,7 +681,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.waist_hip_ratio.Waist_Hip_Ratio_Chart"
+            android:name="com.ianmolcode.forforties.waist_hip_ratio.Waist_Hip_Ratio_Chart"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -692,7 +692,7 @@
 
 
         <receiver
-            android:name="com.crazytrends.healthmanager.notification.NotificationBroadcastReciever"
+            android:name="com.ianmolcode.forforties.notification.NotificationBroadcastReciever"
             android:exported="true" />
 
 
@@ -763,7 +763,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.crazytrends.healthmanager.firebaseinitprovider"
+            android:authorities="com.ianmolcode.forforties.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -771,25 +771,25 @@
         <!--        pill_reminder-->
 
         <activity
-            android:name="com.crazytrends.healthmanager.pill_reminder.Pill_MainActivity"
+            android:name="com.ianmolcode.forforties.pill_reminder.Pill_MainActivity"
             android:theme="@style/AppTheme_pill1">
 
         </activity>
 
         <activity
-            android:name="com.crazytrends.healthmanager.pill_reminder.ReminderAddActivity"
+            android:name="com.ianmolcode.forforties.pill_reminder.ReminderAddActivity"
             android:label="@string/title_activity_add_reminder"
             android:theme="@style/AppTheme_pill2" />
 
         <activity
-            android:name="com.crazytrends.healthmanager.pill_reminder.ReminderEditActivity"
+            android:name="com.ianmolcode.forforties.pill_reminder.ReminderEditActivity"
             android:label="@string/title_activity_edit_reminder"
             android:theme="@style/AppTheme_pill2" />
 
 
-        <receiver android:name="com.crazytrends.healthmanager.pill_reminder.AlarmReceiver" />
+        <receiver android:name="com.ianmolcode.forforties.pill_reminder.AlarmReceiver" />
 
-        <receiver android:name="com.crazytrends.healthmanager.pill_reminder.BootReceiver">
+        <receiver android:name="com.ianmolcode.forforties.pill_reminder.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -809,34 +809,34 @@
 
         <activity
 
-            android:name="com.crazytrends.healthmanager.fragment.Workout"
+            android:name="com.ianmolcode.forforties.fragment.Workout"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
 
         <activity
-            android:name="com.crazytrends.healthmanager.DayActivity"
+            android:name="com.ianmolcode.forforties.DayActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.crazytrends.healthmanager.RestDayActivity"
+            android:name="com.ianmolcode.forforties.RestDayActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.crazytrends.healthmanager.CompletionExcActivity"
+            android:name="com.ianmolcode.forforties.CompletionExcActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.crazytrends.healthmanager.ExcDetailsActivity"
+            android:name="com.ianmolcode.forforties.ExcDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.crazytrends.healthmanager.MainExcerciseActivity"
+            android:name="com.ianmolcode.forforties.MainExcerciseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver
-            android:name="com.crazytrends.healthmanager.alarm.alarmmanagerdemo.NotificationPublisher"
+            android:name="com.ianmolcode.forforties.alarm.alarmmanagerdemo.NotificationPublisher"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -846,7 +846,7 @@
         </receiver>
 
         <receiver
-            android:name="com.crazytrends.healthmanager.receiver.BootReceiver"
+            android:name="com.ianmolcode.forforties.receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -862,7 +862,7 @@
 
 
         <receiver
-            android:name="com.crazytrends.healthmanager.receiver.DailyBrodcast"
+            android:name="com.ianmolcode.forforties.receiver.DailyBrodcast"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -876,7 +876,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.crazytrends.healthmanager.receiver.NotificationReceiver"
+            android:name="com.ianmolcode.forforties.receiver.NotificationReceiver"
             android:enabled="true"
             android:exported="true" />
 
@@ -884,99 +884,99 @@
         <!--        walk and step-->
 
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme_walk.NoActionBar_walk"></activity>
 
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.TrainingActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.TrainingActivity"
             android:label="@string/activity_title_training"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.TrainingOverviewActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.TrainingOverviewActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.TrainingOverviewActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.TrainingOverviewActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.TrainingOverviewActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.TrainingOverviewActivity"
             android:label="@string/activity_title_training"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.PreferencesActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.PreferencesActivity"
             android:label="@string/action_settings"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.MotivationAlertTextsActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.MotivationAlertTextsActivity"
             android:label="@string/activity_title_motivation_alerts"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.PreferencesActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.PreferencesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.PreferencesActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.PreferencesActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.WalkingModesActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.WalkingModesActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/activity_title_walking_modes"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.PreferencesActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.PreferencesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.PreferencesActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.PreferencesActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.WalkingModeLearningActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.WalkingModeLearningActivity"
             android:label="@string/activity_title_walking_modes"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.WalkingModesActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.WalkingModesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.WalkingModesActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.WalkingModesActivity" />
         </activity>
         <activity
-            android:name="com.crazytrends.healthmanager.WalkandStep.activities.DistanceMeasurementActivity"
+            android:name="com.ianmolcode.forforties.WalkandStep.activities.DistanceMeasurementActivity"
             android:label="@string/action_distance_measurement"
-            android:parentActivityName="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity">
+            android:parentActivityName="com.ianmolcode.forforties.WalkandStep.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity" />
+                android:value="com.ianmolcode.forforties.WalkandStep.activities.MainActivity" />
         </activity>
-        <activity android:name="com.crazytrends.healthmanager.WalkandStep.activities.WidgetConfigureActivity">
+        <activity android:name="com.ianmolcode.forforties.WalkandStep.activities.WidgetConfigureActivity">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.OnBootCompletedBroadcastReceiver">
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.OnBootCompletedBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.OnShutdownBroadcastReceiver">
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.OnShutdownBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
                 <!-- this is for some htc devices (and others) -->
                 <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.OnPackageReplacedBroadcastReceiver">
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.OnPackageReplacedBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.crazytrends.healthmanager.WalkandStep.receivers.StepCountPersistenceReceiver"
+            android:name="com.ianmolcode.forforties.WalkandStep.receivers.StepCountPersistenceReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.crazytrends.healthmanager.WALKING_MODE_CHANGED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.WidgetReceiver">
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.WidgetReceiver">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -985,14 +985,14 @@
                 android:resource="@xml/appwidget_provider" />
         </receiver>
 
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.MotivationAlertReceiver" />
-        <receiver android:name="com.crazytrends.healthmanager.WalkandStep.receivers.HardwareStepCountReceiver" />
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.MotivationAlertReceiver" />
+        <receiver android:name="com.ianmolcode.forforties.WalkandStep.receivers.HardwareStepCountReceiver" />
 
-        <service android:name="com.crazytrends.healthmanager.WalkandStep.services.HardwareStepCounterService" />
-        <service android:name="com.crazytrends.healthmanager.WalkandStep.services.MovementSpeedService" />
-        <service android:name="com.crazytrends.healthmanager.WalkandStep.services.AccelerometerStepDetectorService" />
+        <service android:name="com.ianmolcode.forforties.WalkandStep.services.HardwareStepCounterService" />
+        <service android:name="com.ianmolcode.forforties.WalkandStep.services.MovementSpeedService" />
+        <service android:name="com.ianmolcode.forforties.WalkandStep.services.AccelerometerStepDetectorService" />
         <service
-            android:name="com.crazytrends.healthmanager.WalkandStep.services.HardwareStepDetectorService"
+            android:name="com.ianmolcode.forforties.WalkandStep.services.HardwareStepDetectorService"
             android:stopWithTask="false" />
 
 

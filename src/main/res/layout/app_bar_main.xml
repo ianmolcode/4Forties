@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.crazytrends.healthmanager.WalkandStep.activities.MainActivity">
+    tools:context="com.ianmolcode.forforties.WalkandStep.activities.MainActivity">
 
 
 

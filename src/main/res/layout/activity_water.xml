@@ -12,7 +12,7 @@ android:layout_width="match_parent"
 
     <fragment
         android:id="@+id/lommeregnerv2"
-        android:name="com.crazytrends.healthmanager.StatsActivity"
+        android:name="com.ianmolcode.forforties.StatsActivity"
         android:layout_width="match_parent"
         android:layout_height="200dp"></fragment>
 
